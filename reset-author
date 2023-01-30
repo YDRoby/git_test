@@ -1,0 +1,12 @@
+// Reset author information from earlier commit,
+// choose one from the list
+
+//will show all commit list
+git rebase --interactive
+
+//will show how much commit want to change
+git rebase -i HEAD~(insert how much number) //ex:HEAD~20
+
+//then interactive window to edit your commit information will show
+//change author information
+exec git commit --amend --author="YOUR NAME <your secret email, given by github>" -C HEAD
